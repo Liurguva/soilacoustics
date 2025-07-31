@@ -64,6 +64,7 @@ soil-acoustics/
 └── assets/
     ├── figures/             # Diagrams, charts, and schematics
     └── data/                # Example datasets for exercises
+```
 
 ## 🚀 Getting Started
 1. Clone the Repository
