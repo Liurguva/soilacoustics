@@ -64,7 +64,8 @@ soil-acoustics/
 └── assets/
     ├── figures/             # Diagrams, charts, and schematics
     └── data/                # Example datasets for exercises
-🚀 Getting Started
+
+## 🚀 Getting Started
 1. Clone the Repository
 bash
 Copy
@@ -84,7 +85,7 @@ Visual Studio Code with Markdown preview
 3. Navigate by Parts
 The book is organized into 6 major parts, each containing 4 chapters. Browse the chapters/ directory to explore topics of interest.
 
-📘 Reading Experience
+## 📘 Reading Experience
 Equations are formatted using LaTeX inside Markdown:
 
 Inline math: $c = \frac{d}{t}$
@@ -98,7 +99,7 @@ Figures and schematics are stored in the assets/figures/ directory.
 
 Example datasets for exercises are located in assets/data/.
 
-🧪 Contributions
+## 🧪 Contributions
 This project welcomes contributions. To contribute:
 
 Fork the repository
@@ -119,11 +120,11 @@ Adding worked examples and case studies
 
 Extending exercises with data
 
-📜 License
+## 📜 License
 This repository is distributed under the MIT License.
 See the LICENSE file for details.
 
-✉️ Contact
+## ✉️ Contact
 Author: Dr. Leo Liu
 Affiliation: University of Virginia
 
