@@ -70,7 +70,7 @@ soil-acoustics/
 1. Clone the Repository
 bash
 Copy
-git clone https://github.com/your-username/soil-acoustics.git
+git clone https://github.com/Liurguva/wavesinsoi.git
 cd soil-acoustics
 2. Open the Chapters
 You can view chapters in any Markdown viewer, such as:
