@@ -2,6 +2,9 @@
 
 This repository hosts the complete Markdown source code for the textbook **"Soil Acoustics"**, authored by **Leo Liu**. The book is designed as a self-contained educational resource for engineers, researchers, and students aiming to gain an in-depth understanding of soil acoustics, vibration, and wave propagation in geotechnical and environmental engineering contexts.
 
+<img width="1024" height="1536" alt="Book Book 2" src="https://github.com/user-attachments/assets/23efe5b6-595c-4841-a996-ef8f720973d4" />
+
+
 ---
 
 ## 📖 About the Book
