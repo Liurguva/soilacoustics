@@ -1,5 +1,6 @@
 
----
+---<img width="1024" height="1536" alt="Book Book 2" src="https://github.com/user-attachments/assets/d96d50f4-236a-4f98-9841-2c0dcbe39116" />
+
 layout: default
 title: Soil Acoustics
 ---
