@@ -1,0 +1,6 @@
+title: Soil Acoustics
+description: A comprehensive textbook on soil acoustics by Leo Liu
+theme: minima
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
