@@ -6148,4 +6148,440 @@ This chapter details common mechanical wave-based geophysical testing methods us
 
 ## 22.1 Introduction
 
-Mechanical wave-based geophysical testing is c
+Mechanical wave-based geophysical testing is crucial in applications such as earthquake hazard assessment, foundation design, and site characterization. Unlike SASW (Spectral Analysis of Surface Waves) and MASW (Multi-channel Analysis of Surface Waves), which focus on surface wave dispersion, the tests discussed here use body waves and other types of seismic responses to probe subsurface properties. These methods provide quantitative information about seismic velocities, layer thicknesses, and impedance contrasts, all of which are key parameters for geotechnical design.
+
+---
+
+## 22.2 Seismic Refraction Testing
+
+### 22.2.1 Principle and Theory
+
+Seismic refraction testing uses the travel times of seismic waves generated at the surface to determine the subsurface velocity structure. When a seismic wave encounters a boundary between layers with different velocities, it refracts according to Snell's law.
+
+The basic relationship is given by:
+
+$$
+\sin \theta_1 / c_1 = \sin \theta_2 / c_2
+$$
+
+where:
+- $\theta_1$ and $\theta_2$ are the angles of incidence and refraction, respectively,
+- $c_1$ and $c_2$ are the seismic velocities in the upper and lower layers.
+
+The travel time $t$ for a refracted wave over a distance $x$ can be expressed as:
+
+$$
+t(x) = t_0 + \frac{x}{c_{\text{ref}}}
+$$
+
+where:
+- $t_0$ is the intercept time,
+- $c_{\text{ref}}$ is the refracted wave velocity in the lower layer.
+
+### 22.2.2 Procedure and Equipment
+
+1. **Data Acquisition**:  
+   - Place a series of geophones along a straight line on the ground surface.
+   - Generate seismic energy using a sledgehammer impact or explosive charge.
+   - Record the arrival times of seismic waves at each geophone.
+
+2. **Data Analysis**:  
+   - Plot travel time versus distance to produce a time-distance curve.
+   - Identify intercept times and calculate seismic velocities using the slope of the refracted wave segments.
+   - Determine layer thickness using the intercept time and velocity contrasts.
+
+3. **Equipment Example**:  
+   - **Geophones**: 4.5 Hz geophones (e.g., Geosystem SeisModel 1)
+   - **Seismic Source**: Sledgehammer or controlled explosive charge
+   - **Data Logger**: A multi-channel seismograph such as the RefTek RT130
+
+### 22.2.3 Example Calculation
+
+Assume a two-layer model with an upper layer velocity $c_1 = 300$ m/s and a lower layer velocity $c_2 = 600$ m/s. If the intercept time $t_0$ is measured as 0.2 s, then the thickness $h$ of the upper layer is estimated by:
+
+$$
+h = \frac{t_0 \, c_1 \, c_2}{2\sqrt{c_2^2 - c_1^2}} = \frac{0.2 \times 300 \times 600}{2\sqrt{600^2 - 300^2}}
+$$
+
+Calculating the denominator:
+
+$$
+\sqrt{600^2 - 300^2} = \sqrt{360000 - 90000} = \sqrt{270000} \approx 519.62 \, \text{m/s}
+$$
+
+Then:
+
+$$
+h \approx \frac{0.2 \times 180000}{2 \times 519.62} \approx \frac{36000}{1039.24} \approx 34.65 \, \text{m}
+$$
+
+---
+
+## 22.3 Seismic Reflection Testing
+
+### 22.3.1 Principle and Theory
+
+Seismic reflection testing uses the reflection of seismic waves at subsurface interfaces to image geological layers. When seismic waves encounter a boundary with contrasting acoustic impedance, a portion of the energy is reflected back to the surface.
+
+The reflection coefficient $R$ is given by:
+
+$$
+R = \frac{Z_2 - Z_1}{Z_2 + Z_1}
+$$
+
+where:
+- $Z_1 = \rho_1 c_1$ and $Z_2 = \rho_2 c_2$ are the acoustic impedances of the upper and lower layers, respectively.
+
+### 22.3.2 Procedure and Equipment
+
+1. **Data Acquisition**:  
+   - Use a seismic source to generate energy at the surface.
+   - Deploy an array of geophones to record reflected signals.
+   - Use dense spacing to capture high-resolution reflection data.
+
+2. **Data Processing**:  
+   - Apply processing steps such as deconvolution, stacking, and migration to construct a seismic reflection profile.
+   - Interpret the reflection data to identify layer boundaries and structures.
+
+3. **Equipment Example**:  
+   - **Geophones**: Broadband geophones (e.g., Sercel L-22D)
+   - **Seismic Source**: Vibroseis truck or small explosive charges
+   - **Recording System**: A high-channel-count digital seismograph
+
+### 22.3.3 Example Analysis
+
+For a given set of reflection data, identify a strong reflector with a reflection coefficient $R = 0.3$. If the upper layer has a density $\rho_1 = 1800$ kg/m$^3$ and velocity $c_1 = 400$ m/s, and the lower layer has a density $\rho_2 = 2200$ kg/m$^3$, then calculate $c_2$ such that:
+
+$$
+0.3 = \frac{2200 \cdot c_2 - 1800 \cdot 400}{2200 \cdot c_2 + 1800 \cdot 400}
+$$
+
+Solving this equation yields the velocity of the lower layer, which can then be used in further interpretation and modeling.
+
+---
+
+## 22.4 Crosshole and Downhole Seismic Testing
+
+### 22.4.1 Principle and Theory
+
+These methods involve placing sources and receivers in boreholes to measure the travel time of seismic waves between points underground. They are used to obtain high-resolution measurements of seismic velocities in the subsurface.
+
+- **Crosshole Testing**: Seismic waves are generated in one borehole and recorded in another. The travel time between boreholes gives the average seismic velocity along the path.
+- **Downhole Testing**: A source is generated at the surface, and receivers are placed at various depths in a borehole to measure the variation in wave velocity with depth.
+
+The basic velocity equation is:
+
+$$
+c = \frac{d}{t}
+$$
+
+where:
+- $d$ is the distance between the source and receiver,
+- $t$ is the travel time.
+
+### 22.4.2 Procedure and Equipment
+
+1. **Borehole Preparation**:  
+   - Drill two or more boreholes at the test site.
+   - Install geophones or accelerometers at predetermined depths.
+
+2. **Data Acquisition**:  
+   - Generate seismic energy at one borehole (or the surface for downhole testing).
+   - Record the travel times at the receiving borehole(s).
+
+3. **Data Analysis**:  
+   - Compute seismic velocities using the distance and travel time.
+   - Develop a velocity profile for the subsurface.
+
+4. **Equipment Example**:  
+   - **Sensors**: Borehole geophones (e.g., Nanometrics Trillium Compact)
+   - **Seismic Source**: Impact hammer or small explosive charge
+   - **Data Logger**: Multi-channel seismograph (e.g., RefTek RT130)
+
+### 22.4.3 Example Calculation
+
+Assume a crosshole test with two boreholes 10 m apart. If a seismic wave takes 0.025 s to travel between the boreholes, the average velocity is:
+
+$$
+c = \frac{10\,\text{m}}{0.025\,\text{s}} = 400\,\text{m/s}
+$$
+
+This velocity information is critical for assessing soil stiffness and for calibrating geotechnical models.
+
+---
+
+## 22.5 Ambient Noise and HVSR Methods
+
+### 22.5.1 Principle and Theory
+
+The Horizontal-to-Vertical Spectral Ratio (HVSR) method uses ambient seismic noise (microtremors) to estimate the site’s fundamental frequency and amplification characteristics. The method relies on recording ambient vibrations with a three-component sensor and computing the ratio of the horizontal to vertical spectral amplitudes.
+
+### 22.5.2 Procedure
+
+1. **Sensor Deployment**:  
+   - Place a three-component sensor at the site.
+   - Record ambient noise for a sufficient duration (e.g., 30 minutes).
+
+2. **Data Processing**:  
+   - Compute the Fourier spectrum for each component.
+   - Calculate the HVSR by taking the ratio of the average horizontal spectrum to the vertical spectrum:
+
+   $$
+   HVSR(f) = \frac{H(f)}{V(f)}
+   $$
+
+3. **Interpretation**:  
+   - Identify peaks in the HVSR curve to determine the fundamental frequency.
+   - Use the amplification factor for seismic site response analysis.
+
+### 22.5.3 Example
+
+Assume a microtremor survey yields horizontal and vertical spectra. If at 2 Hz the horizontal amplitude is 4 (arbitrary units) and the vertical amplitude is 2, then:
+
+$$
+HVSR(2\,\text{Hz}) = \frac{4}{2} = 2
+$$
+
+A peak in HVSR at 2 Hz indicates significant amplification at that frequency, which is critical for seismic design.
+
+---
+
+## 22.6 Conclusion
+
+Mechanical wave-based geophysical testing provides essential data for characterizing subsurface properties and informing seismic design. By employing methods such as seismic refraction, reflection, crosshole and downhole testing, and ambient noise (HVSR) surveys, engineers can develop detailed subsurface models. These models are crucial for understanding soil behavior, calibrating geotechnical models, and designing earthquake-resistant structures.
+
+*End of Chapter 22*
+
+
+
+# Chapter 23: Surface Wave-Based Geophysics Testing
+
+Surface wave-based geophysical testing is a non-invasive method used to characterize the near-surface soil and rock properties. Techniques such as SASW (Spectral Analysis of Surface Waves) and MASW (Multi-channel Analysis of Surface Waves) provide critical information about the shear wave velocity profile, which is essential for seismic hazard assessment, foundation design, and site response analysis. This chapter explains the underlying theory, working mechanisms, implementation procedures, and result interpretation for these methods, aimed at readers with little background in geophysics.
+
+---
+
+## 23.1 Introduction
+
+Surface waves are seismic waves that travel along the Earth's surface and decay with depth. Their propagation characteristics are strongly influenced by the subsurface material properties, particularly the shear wave velocity. In layered media, the phase velocity of surface waves varies with frequency, a phenomenon known as dispersion. By analyzing the dispersion of surface waves, engineers can invert for the shear wave velocity profile of the near-surface layers.
+
+SASW and MASW are two widely used methods in this category:
+- **SASW**: Typically uses a small number of sensors to record surface waves generated by a controlled source. It is suitable for shallow investigations.
+- **MASW**: Uses a larger array of sensors to capture a more detailed spatial sampling of the wavefield, improving resolution and depth penetration.
+
+Other methods such as microtremor HVSR (Horizontal-to-Vertical Spectral Ratio) and refraction microtremor techniques also contribute valuable data, but this chapter focuses on SASW and MASW.
+
+---
+
+## 23.2 Spectral Analysis of Surface Waves (SASW)
+
+### 23.2.1 Theory
+
+The SASW method relies on the dispersion of surface waves in a layered medium. In such media, the phase velocity $c(f)$ of a surface wave is a function of frequency $f$ because different frequencies sample different depths. A typical dispersion curve relates $c(f)$ to $f$, reflecting the variation in shear stiffness with depth.
+
+A simplified representation is:
+
+$$
+c(f) = c_0 + \Delta c(f)
+$$
+
+where:
+- $c_0$ is the near-surface shear wave velocity,
+- $\Delta c(f)$ represents the change in phase velocity due to deeper, stiffer layers.
+
+### 23.2.2 Working Mechanism
+
+1. **Source Generation**:  
+   A controlled mechanical impact (e.g., a sledgehammer strike or a mechanical shaker) generates surface waves.
+
+2. **Data Acquisition**:  
+   A linear array of geophones is deployed on the ground surface with uniform spacing (typically 1--2 m apart). The geophones record the time-domain response of the propagating surface waves.
+
+3. **Data Processing**:  
+   The recorded signals are transformed to the frequency domain (using Fourier analysis) to extract the phase information. Phase differences between geophones are used to calculate the phase velocity for different frequencies.
+
+4. **Inversion**:  
+   The dispersion curve is inverted using a layered soil model to estimate the shear wave velocity profile of the subsurface.
+
+### 23.2.3 Example Calculation
+
+Assume geophones are placed 1 m apart, and analysis of the recorded signals yields a dispersion curve showing:
+- A phase velocity of 140 m/s at 5 Hz,
+- A phase velocity of 160 m/s at 15 Hz.
+
+These results suggest that:
+- Lower frequencies (5 Hz) sample deeper, stiffer layers,
+- Higher frequencies (15 Hz) are more influenced by the softer near-surface layers.
+
+Using inversion software, these data might yield a near-surface layer (0–3 m) with a shear wave velocity of 140 m/s, and a deeper layer (below 3 m) with a shear wave velocity of 160 m/s.
+
+---
+
+## 23.3 Multi-Channel Analysis of Surface Waves (MASW)
+
+### 23.3.1 Theory
+
+MASW is an extension of SASW that utilizes a larger number of geophones to obtain a more detailed and robust dispersion curve. With enhanced spatial sampling, MASW provides better resolution of the subsurface shear wave velocity profile.
+
+### 23.3.2 Working Mechanism
+
+1. **Source Generation**:  
+   A controlled seismic source (e.g., vibroseis truck or sledgehammer) is used to generate surface waves.
+
+2. **Data Acquisition**:  
+   A multi-channel geophone array (e.g., 20 or more sensors) is laid out in a straight line. The dense spatial sampling allows for the capture of wave propagation over a wide range of frequencies.
+
+3. **Data Processing**:  
+   - Time-space data are transformed using a 2D Fourier Transform to produce an $f$–$k$ (frequency–wavenumber) spectrum.
+   - The dispersion curve is extracted by identifying the ridge of maximum energy in the $f$–$k$ domain.
+   - Inversion algorithms are applied to the dispersion data to estimate the subsurface shear wave velocity profile.
+
+### 23.3.3 Example Calculation
+
+Suppose a MASW survey over a site produces an $f$–$k$ spectrum indicating:
+- A phase velocity of 150 m/s at 10 Hz,
+- A phase velocity of 170 m/s at 20 Hz.
+
+The inversion of these data might yield a two-layer model with:
+- A near-surface layer (0–4 m) with a shear wave velocity of 150 m/s,
+- A deeper layer (below 4 m) with a shear wave velocity of 170 m/s.
+
+This detailed profile is essential for seismic hazard assessments and for designing foundations that are compatible with the subsurface conditions.
+
+---
+
+## 23.4 Additional Methods in Surface Wave Testing
+
+### 23.4.1 Microtremor HVSR Method
+
+The Horizontal-to-Vertical Spectral Ratio (HVSR) method uses ambient seismic noise (microtremors) to estimate the fundamental frequency of the site. A three-component sensor records the ambient noise, and the HVSR is calculated as:
+
+$$
+HVSR(f) = \frac{H(f)}{V(f)}
+$$
+
+where:
+- $H(f)$ is the average horizontal spectral amplitude,
+- $V(f)$ is the vertical spectral amplitude.
+
+A pronounced peak in the HVSR curve indicates the site’s fundamental frequency and provides insights into local amplification effects.
+
+### 23.4.2 Refraction Microtremor Methods
+
+These methods combine aspects of refraction and ambient noise analysis to derive subsurface velocity profiles, particularly useful in urban areas where controlled sources are challenging to deploy.
+
+---
+
+## 23.5 Result Interpretation
+
+Interpreting results from surface wave testing involves:
+
+1. **Dispersion Curve Analysis**:  
+   Examine the dispersion curve (phase velocity vs. frequency). This curve indicates how surface wave velocity changes with frequency due to subsurface layering.
+
+2. **Inversion for Shear Wave Velocity Profile**:  
+   Use inversion algorithms to convert the dispersion curve into a layered model, providing estimates of shear wave velocities and layer thicknesses.
+
+3. **Validation**:  
+   Compare the inversion results with independent geotechnical data (e.g., borehole logs, SPT/CPT results) to assess reliability.
+
+4. **Visualization**:  
+   Plot the dispersion curve and the resulting shear wave velocity profile. Cross-sectional diagrams of the subsurface can help in understanding the soil stratification.
+
+---
+
+## 23.6 Conclusion
+
+Surface wave-based geophysical testing, through methods such as SASW, MASW, HVSR, and refraction microtremor techniques, provides a non-invasive and efficient way to characterize near-surface soil properties. By analyzing the dispersion of surface waves, engineers can derive critical parameters like shear wave velocity and layer thickness, which are essential for seismic hazard analysis and foundation design. The detailed procedures and examples provided in this chapter are intended to guide beginners through the theory, implementation, and interpretation of surface wave tests.
+
+*End of Chapter 23*
+
+
+
+# Chapter 24: Advanced Ground Sensing Based on Motion and Vibration
+
+Ground vibration sensing encompasses various techniques used to detect and analyze ground movements across multiple disciplines, including seismology, geophysics, and engineering. This chapter explores advanced methods of ground vibration sensing, focusing on their underlying principles, instrumentation, applications, and the interpretation of results.
+
+---
+
+## 24.1 Introduction
+
+Ground vibrations originate from natural phenomena like earthquakes and volcanic activity, as well as human activities such as construction, mining, and transportation. Monitoring these vibrations is crucial for assessing structural integrity, understanding subsurface conditions, and mitigating potential hazards.
+
+---
+
+## 24.2 Instrumentation for Ground Vibration Sensing
+
+### 24.2.1 Geophones
+
+Geophones are velocity transducers that convert ground motion into electrical signals. They consist of a coil suspended within a magnetic field; ground movement induces voltage proportional to the velocity of motion. Geophones are widely used in seismic surveys and vibration monitoring due to their sensitivity and reliability.
+
+### 24.2.2 Accelerometers
+
+Accelerometers measure the acceleration of ground motion. They are essential in applications requiring high-frequency response and are commonly used in structural health monitoring and earthquake engineering.
+
+### 24.2.3 Seismometers
+
+Seismometers are sensitive instruments designed to detect and record seismic waves. They are fundamental in seismology for monitoring earthquakes and understanding Earth's internal structure.
+
+---
+
+## 24.3 Seismic Methods in Geophysics
+
+Seismic methods involve analyzing the propagation of seismic waves to infer subsurface properties. Key techniques include:
+
+### 24.3.1 Seismic Refraction
+
+Seismic refraction measures the travel time of seismic waves refracted at geological boundaries. It helps determine the depth and dip of subsurface layers.
+
+### 24.3.2 Seismic Reflection
+
+Seismic reflection captures waves reflected from subsurface interfaces, providing detailed images of geological structures. It is widely used in oil and gas exploration.
+
+### 24.3.3 Surface Wave Analysis
+
+Surface wave methods analyze the dispersion of Rayleigh and Love waves to estimate shear wave velocity profiles, aiding in soil characterization and earthquake site response studies.
+
+---
+
+## 24.4 Vibration Monitoring in Engineering
+
+Vibration monitoring assesses the impact of ground vibrations on structures and human comfort. It involves:
+
+- **Measurement**: Utilizing sensors like geophones and accelerometers to record vibration levels.
+- **Analysis**: Evaluating parameters such as Peak Particle Velocity (PPV) to assess potential damage or discomfort.
+- **Control**: Implementing measures to mitigate excessive vibrations during activities like construction and blasting.
+
+---
+
+## 24.5 Advanced Techniques
+
+### 24.5.1 Atom Interferometry
+
+Atom interferometry uses the wave nature of atoms to measure inertial forces with high precision. It has applications in gravity measurements and inertial navigation.
+
+### 24.5.2 Fiber Optic Sensing
+
+Fiber optic sensors detect vibrations through changes in light transmission properties, offering advantages in sensitivity and immunity to electromagnetic interference.
+
+---
+
+## 24.6 Applications
+
+- **Seismic Hazard Assessment**: Monitoring earthquakes to evaluate risks and design resilient structures.
+- **Resource Exploration**: Imaging subsurface formations to locate oil, gas, and mineral deposits.
+- **Structural Health Monitoring**: Ensuring the safety and longevity of infrastructure by detecting vibrations indicative of structural issues.
+- **Blast Monitoring**: Measuring vibrations from blasting operations to prevent damage to nearby structures.
+
+---
+
+## 24.7 Conclusion
+
+Advanced ground sensing techniques based on motion and vibration are integral to various scientific and engineering disciplines. They provide critical data for understanding subsurface conditions, assessing structural integrity, and mitigating hazards associated with ground vibrations.
+
+*End of Chapter 24*
+
+
+
+
+
+
