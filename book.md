@@ -1,5 +1,10 @@
 
 ---
+layout: default
+title: Soil Acoustics
+---
+
+---
 title: "Soil Acoustics"
 subtitle: "A Comprehensive Guide on Theory and Applications"
 author: "Leo Liu"
