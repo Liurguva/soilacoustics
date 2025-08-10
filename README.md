@@ -1,6 +1,6 @@
 # Soil Acoustics
 
-This repository hosts the complete Markdown source code for the textbook **"Soil Acoustics"**, initiated and managed by by **Leo Liu**. The book is designed as a self-contained educational resource for engineers, researchers, and students aiming to gain an in-depth understanding of soil acoustics, vibration, and wave propagation in geotechnical and environmental engineering contexts.
+This repository hosts the complete Markdown source code for the textbook **"Soil Acoustics"**, initiated and managed by Dr. **Leo Liu** at the University of Virginia. The book is designed as a self-contained educational resource for engineers, researchers, and students aiming to gain an in-depth understanding of soil acoustics, vibration, and wave propagation in geotechnical and environmental engineering contexts.
 
 <img width="1024" height="1536" alt="Book Book 2" src="https://github.com/user-attachments/assets/23efe5b6-595c-4841-a996-ef8f720973d4" />
 
@@ -9,7 +9,7 @@ This repository hosts the complete Markdown source code for the textbook **"Soil
 
 ## 📖 About the Book
 
-**Soil Acoustics** provides a systematic introduction to the fundamentals and applications of acoustic and vibration phenomena in soils and geomaterials. The writing style follows that of Leo Liu’s previous works such as *Multiphysics in Soil Mechanics* and *Artificial Intelligence for Engineers: Basics and Implementations*. The content includes:
+**Soil Acoustics** provides a systematic introduction to the fundamentals and applications of acoustic and vibration phenomena in soils and geomaterials. The writing style follows that of Dr. Liu’s previous works such as *Multiphysics in Soil Mechanics* and *Artificial Intelligence for Engineers: Basics and Implementations*. The content includes:
 
 - Step-by-step theoretical derivations
 - Practical worked examples with detailed solution procedures
@@ -99,6 +99,7 @@ Display math:
 markdown
 Copy
 $$ c = \frac{d}{t} $$
+
 Figures and schematics are stored in the assets/figures/ directory.
 
 Example datasets for exercises are located in assets/data/.
